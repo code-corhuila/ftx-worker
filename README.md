@@ -1,4 +1,4 @@
-﻿# ftx-worker
+# ftx-worker
 
 > Asynchronous jobs and background processing
 
@@ -31,7 +31,11 @@ Nothing in the running system depends on this repository.
 Three permanent branches. **None of them accepts a direct commit**: you enter through a child
 branch and leave through a Pull Request.
 
-
+```
+develop  <--PR--  feat/... fix/... chore/...
+qa       <--PR--  qa/...
+main     <--PR--  release/...  hotfix/...
+```
 
 Promotion happens **by re-application** (`git cherry-pick -x`), never by merging one permanent
 branch into another.
